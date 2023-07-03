@@ -48,6 +48,7 @@ func main() {
 		log.Fatalf("Error creating new YouTube client: %v", err)
 	}
 
+
 	// Make the API call to YouTube.
 	call := service.Search.List([]string{"id,snippet"}).
 		Q(*query).
