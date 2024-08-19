@@ -1,0 +1,12 @@
+lb_port: 5000
+backends:
+  - url: "http://localhost:5100"
+    weight: 5
+  - url: "http://localhost:5200"
+    weight: 3
+  - url: "http://localhost:5300"
+    weight: 4
+  - url: "http://localhost:5400"
+    weight: 1
+  - url: "http://localhost:5500"
+    weight: 2
